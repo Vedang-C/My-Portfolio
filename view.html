@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>View Work</title>
+  <link rel="stylesheet" href="../css/view.css">
+</head>
+<body>
+  <div class="viewer">
+    <button onclick="goBack()" class="back-button">← Back</button>
+    <h1 id="image-title"></h1>
+    <img id="full-image" src="" alt="Graphic Work">
+  </div>
+
+  <script>
+    function getQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return {
+        img: params.get('img'),
+        title: params.get('title')
+      };
+    }
+
+    function goBack() {
+      window.location.href = "index.html#graphic-designing";
+    }
+
+    // Load image and title
+    const { img, title } = getQueryParams();
+    if (img) {
+      document.getElementById('full-image').src = `../images/${img}`;
+    }
+    if (title) {
+      document.getElementById('image-title').textContent = title;
+    }
+  </script>
+</body>
+</html>
