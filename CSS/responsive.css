@@ -129,6 +129,10 @@
     left: 15px;
   }
 
+  .contact-btn {
+    display: none;
+  }
+
   .logo {
     font-size: 1.1rem;
     top: 15px;
@@ -211,28 +215,5 @@
   .footer-copy {
     grid-column: span 2;
     text-align: center;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contact-btn {
-    display: none;
-  }
-
-  .nav-contact {
-    display: block;
-    padding: 10px 20px;
-    color: #a678ff;
-    font-weight: bold;
-    text-decoration: none;
-    border: 1px solid #a678ff;
-    border-radius: 30px;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  .nav-contact:hover {
-    background-color: #a678ff;
-    color: #0f0f1b;
   }
 }
