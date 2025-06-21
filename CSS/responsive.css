@@ -32,6 +32,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
+    min-height: 40px;
   }
 
   .hamburger {
@@ -41,9 +42,13 @@
     left: 20px;
   }
 
+  .header-btn {
+    display: none;
+  }
+
   .logo {
     position: absolute;
-    top: 20px;
+    top: 28px;
     right: 20px;
     font-size: 1.3rem;
     order: 2;
@@ -111,6 +116,44 @@
   .edu-logo img {
     width: 80px;
   }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: left;
+  }
+
+  .footer-name {
+    grid-column: span 3;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column: span 2;                  
+    gap: 10px;
+  }
+
+  .footer-nav a {
+    display: block;
+    text-align: left;
+  }
+  
+  .footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-copy {
+    grid-column: span 3;
+    text-align: center;
+  }
 }
 
 /* Mobiles (480px and below) */
@@ -127,17 +170,6 @@
     font-size: 2rem;
     top: 15px;
     left: 15px;
-  }
-
-  /* Hide the Contact Me button in the top-right header */
-  .header-btn {
-    display: none !important;
-  }
-
-  /* Also hide it from inside the hamburger menu nav (assuming it’s the last link or links to #contact) */
-  .nav a[href="#contact"],
-  .nav a:last-child {
-    display: none !important;
   }
 
   .logo {
