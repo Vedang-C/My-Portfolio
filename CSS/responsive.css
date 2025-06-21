@@ -129,8 +129,15 @@
     left: 15px;
   }
 
-  .contact-btn {
-    display: none;
+  /* Hide the Contact Me button in the top-right header */
+  .header-btn {
+    display: none !important;
+  }
+
+  /* Also hide it from inside the hamburger menu nav (assuming it’s the last link or links to #contact) */
+  .nav a[href="#contact"],
+  .nav a:last-child {
+    display: none !important;
   }
 
   .logo {
@@ -217,3 +224,4 @@
     text-align: center;
   }
 }
+
