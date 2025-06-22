@@ -1,7 +1,7 @@
 const projects = {
   "ecommerce": {
     title: "E-commerce Website",
-    img: "../images/ecommerce.png",
+    img: "images/ecommerce.png",
     tags: ["Web Development", "E-commerce", "HTML", "CSS", "JavaScript", "Responsive", "Accessibility", "GitHub"],
     time: "Jan - Feb 2025",
     desc: "A fully responsive e-commerce website with product listings, filters, and a modern UI design.",
@@ -10,7 +10,7 @@ const projects = {
   },
   "fitness": {
     title: "Fitness Website Application",
-    img: "../images/figma2.png",
+    img: "images/figma2.png",
     tags: ["Web Development", "Fitness", "HTML", "CSS", "JavaScript", "Responsive", "Accessibility", "Git"],
     time: "Apr - May 2025",
     desc: "A landing page and interactive dashboard for a fitness platform with user goals and daily tracking features.",
