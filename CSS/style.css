@@ -73,6 +73,8 @@ body {
 
 .left {
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -103,6 +105,7 @@ p {
 }
 
 .resume-btn {
+  width: fit-content;
   margin-top: 30px;
   padding: 14px 28px;
   background: linear-gradient(90deg, #8e2de2, #4a00e0);
@@ -113,6 +116,7 @@ p {
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .resume-btn:hover {
