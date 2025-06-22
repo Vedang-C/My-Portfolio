@@ -93,6 +93,12 @@
     border-radius: 50%;
     object-fit: cover;
   }
+  
+  .resume-btn {
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+  }
 
   .why-me-grid {
     grid-template-columns: 1fr;
