@@ -7,12 +7,8 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 
   const form = this;
 
-  emailjs.send("service_svseabs", "template_3rfccpl", {
-    name: form.name.value,
-    email: form.email.value,
-    telephone: form.telephone.value,
-    message: form.message.value,
-  }).then(
+  emailjs.sendForm("service_svseabs", "template_3rfccpl", form)
+  .then(
     function (response) {
       document.getElementById("status-msg").textContent = "✅ Message sent successfully!";
       form.reset();
