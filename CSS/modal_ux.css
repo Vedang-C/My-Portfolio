@@ -1,0 +1,167 @@
+/* Full-screen overlay */
+/* Dim + blur background when modal is open */
+body.modal-open #main-content {
+  filter: blur(5px);
+  pointer-events: none;
+  transition: filter 0.3s ease;
+}
+
+/* Optional: Add a dark overlay */
+body.modal-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 15, 30, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-y: auto;
+}
+
+/* Modal box */
+.modal-popup {
+  background-color: #1a1a2e;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-in-out;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 28px;
+  color: #ccc;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Image section */
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-bottom: 1px solid #333;
+}
+
+/* Scrollable content below image */
+.modal-body {
+  padding: 24px;
+  overflow-y: auto;
+}
+
+/* Title */
+.modal-body h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #f2f2f2;
+}
+
+.modal-time {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 16px;
+}
+
+/* Tech tags */
+.modal-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.modal-tags span {
+  background-color: #5c2d91;
+  padding: 4px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #eee;
+}
+
+/* Description */
+.modal-description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ddd;
+  white-space: pre-line;
+  margin-bottom: 24px;
+}
+
+/* Buttons row */
+.modal-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn {
+  flex: 1 1 45%;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn-dark {
+  background-color: #2c2c38;
+  color: white;
+}
+
+.btn-dark:hover {
+  background-color: #444;
+}
+
+.btn-purple {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.btn-purple:hover {
+  background-color: #5b21b6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .modal-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    flex: 1 1 100%;
+  }
+
+  .modal-body {
+    padding: 16px;
+  }
+}
