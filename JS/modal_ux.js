@@ -6,7 +6,7 @@ const uxProjects = {
     time: "Nov 2024",
     desc: "A complete UI/UX project for a mobile-first food delivery service, designed with accessibility and ease-of-use in mind.",
     processLink: "food-delivery-process.html",
-    prototypeLink: "https://www.figma.com/proto/dhOqhZc6RB7RGj8gQ733Rg/App-Design"
+    prototypeLink: "https://www.figma.com/design/dhOqhZc6RB7RGj8gQ733Rg/App-Design?node-id=0-1&t=zKBN06R18HJ6S4Et-1"
   },
   "fitnessux": {
     title: "Fitness Website Application",
@@ -15,7 +15,7 @@ const uxProjects = {
     time: "Mar - Apr 2025",
     desc: "A responsive web app design promoting user engagement through intuitive workout tracking and clean navigation.",
     processLink: "fitness-process.html",
-    prototypeLink: "https://www.figma.com/proto/926cmR0y8guN4hwTLEbeqv/Website-Application"
+    prototypeLink: "https://www.figma.com/design/926cmR0y8guN4hwTLEbeqv/Website-Application?node-id=0-1&t=CREoCGWE4fEYKXUX-1"
   }
 };
 
