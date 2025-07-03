@@ -1,66 +1,110 @@
+/* General Page Background */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
+  background-color: #0f0f1b;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  color: #222;
+  line-height: 1.7;
 }
 
-.hero {
-  background-color: #6c63ff;
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
+/* Container for whole process page */
+.process-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-}
-
-.process-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  border-bottom: 1px solid #eee;
-}
-
-.process-section h2 {
-  color: #6c63ff;
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.process-image {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-
-ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
-}
-
-.btn-purple {
+/* Back Button */
+.back-btn {
   display: inline-block;
-  margin-top: 1rem;
-  background-color: #6c63ff;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: 2px solid #a678ff;
+  color: #a678ff;
+  padding: 10px 20px;
+  border-radius: 20px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-.btn-purple:hover {
-  background-color: #5a54d1;
+.back-btn:hover {
+  background: #a678ff;
+  color: white;
+}
+
+/* Section Title */
+.process-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #9b59b6, #6e48aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Individual Process Step Card */
+.process-step {
+  background-color: #1e1e2e;
+  border-radius: 16px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.15);
+  padding: 30px 24px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.35);
+}
+
+.process-step h2 {
+  font-size: 1.75rem;
+  color: #cfc8ff;
+  margin-bottom: 16px;
+}
+
+.process-step p,
+.process-step li {
+  font-size: 1rem;
+  color: #d4d4d4;
+}
+
+.process-step ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  list-style: disc;
+}
+
+/* Step Image */
+.process-step img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  box-shadow: 0 6px 16px rgba(168, 85, 247, 0.3);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .process-container {
+    padding: 0 16px;
+  }
+
+  .process-title {
+    font-size: 2rem;
+  }
+
+  .process-step h2 {
+    font-size: 1.4rem;
+  }
+
+  .back-btn {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
 }
