@@ -16,26 +16,41 @@ body {
 }
 
 /* Back Button */
+.back-btn-container {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 1000;
+}
+
 .back-btn {
   display: inline-block;
   margin-bottom: 40px;
   background-color: transparent;
-  border: 2px solid #a678ff;
-  color: #a678ff;
+  background: linear-gradient(90deg, #8e2de2, #4a00e0);
+  color: #fff;
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: bold;
+  font-size: 1rem;
   text-decoration: none;
   transition: background 0.3s ease, color 0.3s ease;
 }
 
 .back-btn:hover {
-  background: #a678ff;
-  color: white;
+  background: linear-gradient(90deg, #a678ff, #6e48aa);
+  transform: translateY(-2px);
 }
 
 /* Section Title */
+.process-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
 .process-title {
+  margin-top: 32px;
   font-size: 2.5rem;
   font-weight: bold;
   background: linear-gradient(45deg, #9b59b6, #6e48aa);
@@ -89,26 +104,6 @@ body {
   box-shadow: 0 6px 16px rgba(168, 85, 247, 0.3);
 }
 
-/* Responsive Tweaks */
-@media (max-width: 768px) {
-  .process-container {
-    padding: 0 16px;
-  }
-
-  .process-title {
-    font-size: 2rem;
-  }
-
-  .process-step h2 {
-    font-size: 1.4rem;
-  }
-
-  .back-btn {
-    font-size: 0.95rem;
-    padding: 8px 16px;
-  }
-}
-
 .process-image {
   margin-top: 20px;
   text-align: center;
@@ -138,4 +133,48 @@ body {
 .prototype-btn:hover {
   background: linear-gradient(90deg, #a678ff, #6e48aa);
   transform: translateY(-2px);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .process-container {
+    padding: 80px;
+  }
+
+  .process-title {
+    margin-top: -40px;
+    font-size: 2rem;
+  }
+
+  .process-step h2 {
+    font-size: 1.4rem;
+  }
+
+  .back-btn {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .back-btn-container {
+    position: fixed !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    top: auto !important;
+    transform: translateX(-50%) !important;
+    z-index: 1000;
+    text-align: center;
+  }
+
+  .back-btn-container .back-btn {
+    background-color: #4f46e5;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+    padding: 12px 24px;
+  }
+
+  .back-btn-container .back-btn:hover {
+    background: linear-gradient(90deg, #a678ff, #6e48aa);
+    transform: translateY(-2px);
+  }
 }
