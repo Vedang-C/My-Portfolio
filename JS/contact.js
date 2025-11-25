@@ -1,21 +1,34 @@
-(function () {
-  emailjs.init("XJOvoIId8TZuQUzgp"); 
-})();
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const statusMsg = document.getElementById("status-msg");
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
 
-  const form = this;
+    statusMsg.innerHTML = "Sending...";
+    statusMsg.style.color = "#a678ff";
 
-  emailjs.sendForm("service_svseabs", "template_3rfccpl", form)
-  .then(
-    function (response) {
-      document.getElementById("status-msg").textContent = "✅ Message sent successfully!";
-      form.reset();
-    },
-    function (error) {
-      document.getElementById("status-msg").textContent = "❌ Failed to send message. Please try again later.";
-      console.error("EmailJS Error:", error);
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        statusMsg.innerHTML = "✅Message sent successfully!";
+        statusMsg.style.color = "#4ade80";
+        form.reset();
+      } else {
+        statusMsg.innerHTML = "❌Something went wrong. Please try again!!!";
+        statusMsg.style.color = "#ef4444";
+      }
+    } catch (error) {
+      statusMsg.innerHTML = "❗Network error. Please try again later.";
+      statusMsg.style.color = "#ef4444";
     }
-  );
+  });
 });
