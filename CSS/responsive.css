@@ -54,6 +54,10 @@
     order: 2;
   }
 
+  .logo-video {
+    height: 45px; 
+  }
+
   .nav {
     display: none;
     flex-direction: column;
@@ -183,6 +187,10 @@
     font-size: 1.1rem;
     top: 15px;
     right: 15px;
+  }
+
+  .logo-video {
+    height: 35px;
   }
 
   .nav {

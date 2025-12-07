@@ -16,16 +16,18 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  height: 60px;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #cfc8ff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
-.logo span {
-  color: #a678ff;
+.logo-video {
+  height: 100px;
+  width: auto;
 }
 
 .nav {
