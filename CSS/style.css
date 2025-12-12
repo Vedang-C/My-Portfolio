@@ -20,14 +20,13 @@ body {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #cfc8ff;
 }
 
-.logo-video {
-  height: 90px;
-  width: auto;
+.logo span {
+  color: #a678ff;
 }
 
 .nav {
