@@ -16,28 +16,30 @@
     <div class="process-step">
       <h2>Problem Statement</h2>
       <p>
-        The goal was to design a mobile-first food delivery platform tailored to fast-paced, urban lifestyles. Users often faced frustration with long wait times, clunky app flows, and lack of clarity around order tracking. The challenge was to streamline the user experience, improve discoverability of menu items, simplify checkout, and increase transparency around delivery timing.
+        Food delivery apps promise convenience, but most of them make you work for it. When I started this project, I kept coming back to one question: why does ordering dinner still feel like filling out a form? I wanted to design something for people who are hungry now — students between classes, professionals grabbing lunch on a 20-minute break, parents ordering with a toddler on their hip — where speed and clarity weren't afterthoughts, they were the whole design brief.
       </p>
     </div>
 
     <div class="process-step">
-      <h2>Design Thinking</h2>
+      <h2>My Approach</h2>
       <p>
-        We followed a user-centered design thinking framework: <strong>Empathize</strong> (understand the user context), <strong>Define</strong> (identify the real problem), <strong>Ideate</strong> (brainstorm creative solutions), <strong>Prototype</strong> (build testable versions), and <strong>Test</strong> (gather feedback and iterate). This cycle ensured that user insights continuously shaped the solution.
+        I leaned on a standard design thinking loop — <strong>empathize, define, ideate, prototype, test </strong>— but the honest version of that is: talk to real people, get surprised by what they say, sketch fast, show it to someone, get told I was wrong about something, fix it. Repeat. The framework is the scaffolding; the actual work is the back-and-forth with users.
       </p>
     </div>
 
     <div class="process-step">
       <h2>User Research</h2>
       <p>
-        We interviewed 8 users across three demographics: students, working professionals, and busy parents. The interviews revealed major pain points: long and complex checkout forms, unclear pricing breakdowns, difficulty finding specific dishes, and minimal feedback during order tracking. Users preferred intuitive filters, personalized suggestions, and real-time delivery updates. We also conducted competitor analysis of apps like Uber Eats and DoorDash to identify common UX patterns and missed opportunities.
+        I interviewed 8 people across three groups — students, working professionals, and parents — because I suspected their frustrations would be different, and they were. Students cared most about price transparency (no one likes a surprise delivery fee at checkout). Professionals wanted speed and minimal taps. Parents wanted to reorder past meals without re-navigating the whole menu. <br>
+        Across all three groups, the same three complaints kept surfacing: checkout forms that felt longer than they needed to be, pricing that wasn't clear until the very last screen, and delivery tracking that left people guessing. I also spent time in Uber Eats and DoorDash to see how they'd already solved (or hadn't solved) these problems — not to copy them, but to understand what "normal" felt like so I'd know where I could actually improve on it.
       </p>
     </div>
 
     <div class="process-step">
       <h2>Low-Fidelity Wireframes</h2>
       <p>
-        Initial sketches were drawn by hand to explore the layout of core screens: Home (with categories and promotions), Menu Listing, Product Details, Cart, and Order Tracking. Our goal was to minimize cognitive load—only the most essential elements were placed on each screen. We used grayscale boxes to block out UI sections, focusing on structure before styling. Key decisions included prominent CTA buttons, tab navigation, and collapsing sections for optional info.
+        I started on paper, deliberately ugly — grayscale boxes, no color, no fonts worth mentioning. The point wasn't to make it look good, it was to force myself to answer "does this screen need to exist, and does it need everything on it?" for Home, Menu Listing, Product Details, Cart, and Order Tracking. <br>
+        A few decisions came directly out of this stage: CTA buttons needed to be impossible to miss (my testers kept losing them in early sketches), tab navigation made more sense than a hamburger menu for a task this frequent, and anything non-essential got collapsed into an expandable section instead of competing for space on the main screen.
       </p>
       <div class="process-image">
         <img src="low_fi/image11.png" alt="Low-fidelity wireframes for food delivery app" />
@@ -56,7 +58,7 @@
     <div class="process-step">
       <h2>High-Fidelity Prototype</h2>
       <p>
-        Based on feedback from the sketches, we created high-fidelity screens in Figma. The interface used brand colors and micro-interactions to guide users naturally through the flow. Icons and typography were chosen for clarity on smaller devices. We added animation transitions between steps like selecting items, modifying cart contents, and tracking the delivery live. We ensured accessibility standards were met, including sufficient contrast, tap-friendly UI elements, and screen reader labels.
+        Once the bones worked, I moved into Figma and started making it look like something you'd actually want to open. Brand colors, micro-interactions on things like adding an item to cart, transitions between ordering and tracking — small moments that make an app feel alive instead of static. I also went back and checked contrast ratios, tap target sizes, and screen reader labels, because an interface that only works for some people isn't actually done.
       </p>
       <a href="https://www.figma.com/design/dhOqhZc6RB7RGj8gQ733Rg/App-Design?node-id=0-1&t=SJQiOeRUCSjbkLz0-1" target="_blank" class="prototype-btn">
         View Full Prototype →
@@ -66,14 +68,15 @@
     <div class="process-step">
       <h2>Usability Testing</h2>
       <p>
-        We tested our interactive prototype with 5 participants using remote screen-sharing tools. We assigned them tasks such as "Order a vegan lunch combo" or "Track your delivery after checkout." Most users completed the tasks successfully, but a few struggled with the placement of the filter button and misunderstood the meaning of some delivery icons. We recorded sessions, took notes on navigation patterns, and analyzed verbal feedback to prioritize improvements.
+        I tested the interactive prototype with 5 participants over screen share, giving them real tasks like "order a vegan lunch combo" and "track your order after checkout." Most people got through both without help, which was reassuring — but two specific things broke: the filter button was in a spot people didn't expect, and a couple of the delivery-status icons meant nothing without a label next to them. That second one stuck with me — I'd fallen into the classic trap of designing an icon that made sense to me because I'd stared at it for hours, not to someone seeing it for the first time.
       </p>
     </div>
 
     <div class="process-step">
       <h2>Final Iterations</h2>
       <p>
-        We implemented key changes from testing: clearer icon labels, simplified filter toggles, a progress bar during checkout, and a persistent order status widget. We also refined the layout for edge cases like failed payments or unavailable items. The final product was more intuitive, visually polished, and user-friendly, meeting the original goal of a frictionless, fast, and engaging food ordering experience.
+        I fixed what testing exposed: added text labels next to the icons that were confusing people, simplified the filter into something more discoverable, added a progress bar during checkout so people could see how many steps were left, and built a persistent order-status widget so tracking wasn't buried in its own screen. I also went back and designed for the messy cases — failed payments, out-of-stock items — because a prototype that only works when everything goes right isn't really tested. <br>
+        What I ended up with wasn't just "prettier" than where I started — it was a checkout flow with fewer decision points, tracking that answers questions before users have to ask them, and an interface that held up when I put it in front of people who weren't me.
       </p>
     </div>
   </div>
