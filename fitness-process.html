@@ -16,33 +16,30 @@
     <div class="process-step">
       <h2>Problem Statement</h2>
       <p>
-        The project aimed to design a user-friendly fitness tracking app tailored for people trying to build healthier habits without getting overwhelmed. Many users struggle with inconsistent workout schedules, lack of motivation, and difficulty tracking their progress over time. Existing apps were often cluttered or too focused on expert users. Our goal was to create an app that encourages daily movement, tracks workouts intuitively, and helps users set realistic fitness goals regardless of their fitness level.
+        Most fitness apps have the same flaw: they're built for people who already work out five days a week. I wanted to design something different, an app for someone who wants to move more but keeps falling off after a week or two, not because they're lazy, but because the app itself made consistency harder than it needed to be. The goal was simple to say and hard to do: help people track workouts without feeling overwhelmed, and make small daily progress feel worth showing up for.
       </p>
     </div>
 
     <div class="process-step">
-      <h2>Design Thinking</h2>
+      <h2>My Approach</h2>
       <p>
-        We adopted the design thinking process to solve this challenge creatively and empathetically. This included:
-        <strong>Empathizing</strong> with users through interviews and surveys,
-        <strong>Defining</strong> the main obstacles to consistent fitness behavior,
-        <strong>Ideating</strong> potential solutions through brainstorming,
-        <strong>Prototyping</strong> interactive screens and user flows, and
-        <strong>Testing</strong> those prototypes with real users to validate usability. This iterative approach allowed us to stay user-focused throughout the development cycle.      
+        I used the design thinking process, but the practical version of it looked like this: talk to real users first, figure out what's actually stopping them (not what I assumed was stopping them), sketch a bunch of rough ideas, build something testable, then put it in front of people and watch where it breaks. That last part is the one that actually teaches you something.
       </p>
     </div>
 
     <div class="process-step">
       <h2>User Research</h2>
       <p>
-        We conducted surveys and one-on-one interviews with 12 users ranging from beginners to intermediate-level fitness enthusiasts. The research surfaced three common themes: (1) a need for goal-setting based on personal fitness levels, (2) difficulty maintaining motivation without visual progress tracking, and (3) frustration with overwhelming data or features in other apps. Insights from this research shaped the decision to emphasize clean UI, habit-building gamification, and quick-start workouts. We also examined apps like Nike Training Club and FitOn for market comparison.
+        I ran surveys and one on one interviews with 12 people, spanning true beginners to people who already had a consistent gym habit. Three things kept coming up no matter who I talked to. First, people wanted goals that matched their actual fitness level, not a generic "10,000 steps" target pulled from nowhere. Second, motivation dropped fast without something visual to track progress against. Third, and this one surprised me a little, several users said they'd tried other fitness apps and quit because there was simply too much going on. Too many stats, too many settings, too much friction before you even got to the workout.
+        <br>
+        Those three findings became my north star: keep the interface clean, build in small moments of gamification around habit forming, and make it possible to start a workout in seconds, not minutes. I also looked at Nike Training Club and FitOn, not to copy them, but to see what the "default" experience looked like so I could figure out where I actually wanted to be different.
       </p>
     </div>
 
     <div class="process-step">
       <h2>Low-Fidelity Wireframes</h2>
       <p>
-        We started by sketching out key screens including the Home Dashboard, Daily Workout Planner, Progress Tracker, and Goal Setting. The focus was on layout and navigation rather than aesthetics. These sketches helped us map out the user journey—from onboarding and setting fitness goals to completing a workout and viewing stats. Wireframes were drawn with pen and paper first, then digitized for collaborative review.
+        I started with pen and paper on the core screens: Home Dashboard, Daily Workout Planner, Progress Tracker, and Goal Setting. At this stage I wasn't thinking about how anything looked, only how someone would move from opening the app to actually starting a workout with as little friction as possible. Once I had something I trusted, I digitized the sketches so I could review them properly and start noticing gaps in the flow that weren't obvious on paper.
       </p>
       <div class="process-image">
         <img src="low_fi/image.png" alt="Low-fidelity wireframes for fitness website app" />
@@ -62,7 +59,9 @@
     <div class="process-step">
       <h2>High-Fidelity Prototype</h2>
       <p>
-        Once the wireframes were validated, we designed high-fidelity prototypes in Figma using a clean, energetic color palette that aligns with health and motivation. We used components for consistency and included interactive elements like toggles for workout types, animations for goal achievements, and responsive charts for progress tracking. UI elements were optimized for mobile usability, with large tap targets and readable fonts. Accessibility guidelines were followed closely to support colorblind users and screen readers. Below are some of the examples of general high-fidelity wireframes.
+        With the flow validated, I moved into Figma and built out the visual layer. I picked a color palette that felt energetic without being loud, something that matched the tone of "you can do this" rather than a clinical fitness tracker. I built out reusable components for consistency, added toggles for different workout types, small celebratory animations when a goal was hit, and charts that actually made progress easy to read at a glance instead of just dumping numbers on screen.
+        <br>
+        I paid close attention to mobile usability specifically: large tap targets, fonts that stayed readable at a glance mid workout, and accessibility checks for colorblind users and screen readers, because a fitness app someone opens while out of breath needs to work without much thought.
       </p>
       <a href="https://www.figma.com/design/926cmR0y8guN4hwTLEbeqv/Website-Application?node-id=0-1&t=CREoCGWE4fEYKXUX-1" target="_blank" class="prototype-btn">
         View Full Prototype →
@@ -72,14 +71,16 @@
     <div class="process-step">
       <h2>Usability Testing</h2>
       <p>
-        We tested the prototype with 6 participants across different fitness levels. Each user was given tasks such as "Set a weekly step goal" and "Start a workout from the home screen." Feedback revealed that users loved the progress tracker but wanted more clarity in the icons and simpler onboarding steps. One key insight was that beginner users hesitated to commit to goals unless they saw an example or tutorial. These insights led to further design refinement.
+        I tested the prototype with 6 people across different fitness levels, giving them tasks like setting a weekly step goal and starting a workout directly from the home screen. The progress tracker was a clear hit, people genuinely liked watching it fill up. But two issues surfaced that I hadn't expected going in. A few icons weren't self explanatory without a label next to them, and more interestingly, beginner users hesitated before committing to a goal at all unless they had an example to anchor against first. That second finding reshaped how I thought about onboarding entirely.
       </p>
     </div>
 
     <div class="process-step">
       <h2>Final Iterations</h2>
       <p>
-        In the final iteration, we simplified the onboarding by adding a quick-start option, clarified iconography with labels, and introduced an in-app coach character for encouragement. We also integrated feedback into the progress tracker by showing weekly streaks and reward badges to improve user motivation. The final design offered a blend of usability, visual appeal, and motivational tools—crafted for users trying to make fitness a consistent part of their daily lives.
+        Based on what testing surfaced, I added a quick start option so new users could skip straight into a workout instead of facing a wall of setup steps first. I added text labels next to icons that had confused people. And to address that hesitation around goal setting, I introduced a small in app coach character that offers encouragement and examples at the moments users seemed most likely to freeze up. I also built weekly streaks and reward badges into the progress tracker, since the research had made it clear that visible, small wins were doing a lot of the motivational work.
+        <br>
+        What came out the other side wasn't just a cleaner app, it was one built around the actual moment someone almost gives up, and designed to nudge them past it instead.
       </p>
     </div>
   </div>
