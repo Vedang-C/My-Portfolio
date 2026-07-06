@@ -4,7 +4,7 @@ const uxProjects = {
     img: "images/figma1.png",
     tags: ["UI/UX", "Digital Product", "Prototype", "Wireframing", "Usability Tested", "Figma"],
     time: "Nov 2024",
-    desc: "A complete UI/UX project for a mobile-first food delivery service, designed with accessibility and ease-of-use in mind.",
+    desc: "Designed a mobile first food ordering experience for people who don't have time to fight with an app before they can eat. Built around research into what actually slows users down at checkout, and refined through real usability testing until strangers could order a meal without getting stuck.",
     processLink: "food-delivery-process.html",
     prototypeLink: "https://www.figma.com/design/dhOqhZc6RB7RGj8gQ733Rg/App-Design?node-id=0-1&t=zKBN06R18HJ6S4Et-1"
   },
@@ -13,7 +13,7 @@ const uxProjects = {
     img: "images/figma2.png",
     tags: ["UI/UX", "Fitness Website Application", "Wireframing", "Usability Tested", "Prototype", "Figma"],
     time: "Mar - Apr 2025",
-    desc: "A responsive web app design promoting user engagement through intuitive workout tracking and clean navigation.",
+    desc: "Designed a fitness tracking app for people who want to build a habit, not train for a marathon. The core challenge was keeping beginners from freezing at the goal setting step, solved through an onboarding flow and an in app coach that meets people where they are instead of assuming confidence they don't have yet.",
     processLink: "fitness-process.html",
     prototypeLink: "https://www.figma.com/design/926cmR0y8guN4hwTLEbeqv/Website-Application?node-id=0-1&t=CREoCGWE4fEYKXUX-1"
   }
