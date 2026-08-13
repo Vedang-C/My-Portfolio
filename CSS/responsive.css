@@ -262,3 +262,49 @@
   }
 }
 
+/* POSTNORD INTERNSHIP RESPONSIV */
+
+@media (max-width: 768px) {
+
+  .process-intro {
+    font-size: 0.95rem;
+    margin-top: -15px;
+  }
+
+  .project-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final-design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iteration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-flow {
+    flex-direction: column;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+  }
+
+  .challenge-box p {
+    font-size: 1rem;
+  }
+
+  .nda-notice {
+    padding: 18px;
+  }
+
+}

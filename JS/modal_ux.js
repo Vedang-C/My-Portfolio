@@ -16,6 +16,15 @@ const uxProjects = {
     desc: "Designed a fitness tracking app for people who want to build a habit, not train for a marathon. The core challenge was keeping beginners from freezing at the goal setting step, solved through an onboarding flow and an in app coach that meets people where they are instead of assuming confidence they don't have yet.",
     processLink: "fitness-process.html",
     prototypeLink: "https://www.figma.com/design/926cmR0y8guN4hwTLEbeqv/Website-Application?node-id=0-1&t=CREoCGWE4fEYKXUX-1"
+  },
+  "postnordux": {
+    title: "UX Design Internship — PostNord",
+    img: "images/postnord.png",
+    tags: ["UI/UX", "UX Research", "Wireframing", "Prototyping", "Usability Testing", "UX Content Writing", "Figma", "Miro"],
+    time: "Mar - May 2026",
+    desc: "A professional UX internship project focused on improving a digital service through research, interaction design, prototyping and usability testing.",
+    processLink: "internship-process.html",
+    prototypeLink: "#"
   }
 };
 
