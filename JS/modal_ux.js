@@ -18,8 +18,8 @@ const uxProjects = {
     prototypeLink: "https://www.figma.com/design/926cmR0y8guN4hwTLEbeqv/Website-Application?node-id=0-1&t=CREoCGWE4fEYKXUX-1"
   },
   "postnordux": {
-    title: "UX Design Internship — PostNord",
-    img: "images/postnord.png",
+    title: "UI/UX Design Internship",
+    img: "images/internship.jpg",
     tags: ["UI/UX", "UX Research", "Wireframing", "Prototyping", "Usability Testing", "UX Content Writing", "Figma", "Miro"],
     time: "Mar - May 2026",
     desc: "A professional UX internship project focused on improving a digital service through research, interaction design, prototyping and usability testing.",
