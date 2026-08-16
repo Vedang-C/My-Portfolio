@@ -24,7 +24,7 @@ const uxProjects = {
     time: "Mar - May 2026",
     desc: "A professional UX internship project focused on improving a digital service through research, interaction design, prototyping and usability testing.",
     processLink: "internship-process.html",
-    prototypeLink: "#"
+    prototypeLink: "prototype-unavailable.html"
   }
 };
 

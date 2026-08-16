@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prototype Unavailable</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      background: #0f0f1b;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .error-container {
+      width: 100%;
+      max-width: 650px;
+      padding: 50px 40px;
+
+      text-align: center;
+
+      background: #1e1e2e;
+      border: 1px solid rgba(168, 85, 247, 0.2);
+      border-radius: 20px;
+
+      box-shadow: 0 8px 30px rgba(168, 85, 247, 0.15);
+    }
+
+    .error-icon {
+      width: 70px;
+      height: 70px;
+
+      margin: 0 auto 25px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: rgba(166, 120, 255, 0.12);
+      color: #a678ff;
+
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 15px;
+
+      font-size: 2rem;
+
+      background: linear-gradient(45deg, #9b59b6, #6e48aa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      margin: 0 auto 15px;
+
+      max-width: 520px;
+
+      color: #d4d4d4;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .note {
+      margin-top: 25px;
+
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    .back-btn {
+      display: inline-block;
+
+      margin-top: 25px;
+      padding: 12px 24px;
+
+      background: linear-gradient(90deg, #8e2de2, #4a00e0);
+
+      color: white;
+      text-decoration: none;
+
+      font-weight: 600;
+
+      border-radius: 25px;
+
+      transition: transform 0.2s ease,
+                  opacity 0.2s ease;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    @media (max-width: 600px) {
+      .error-container {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="error-container">
+
+    <div class="error-icon">
+      !
+    </div>
+
+    <h1>Prototype Currently Unavailable</h1>
+
+    <p>
+      The interactive prototype for this project is currently unavailable
+      due to confidentiality and project access restrictions.
+    </p>
+
+    <p>
+      However, the design process provides an overview of the research,
+      design decisions, iterations, and final outcome of the project.
+    </p>
+
+    <p class="note">
+      Please use the Design Process link to explore the project in more detail.
+    </p>
+
+    <a href="internship-process.html" class="back-btn">
+      View Design Process →
+    </a>
+
+  </div>
+
+</body>
+</html>
